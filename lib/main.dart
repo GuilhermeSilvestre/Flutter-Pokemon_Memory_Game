@@ -44,7 +44,24 @@ class _MyHomePageState extends State<MyHomePage> {
     false,
     false,
     false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
   ];
+
+  void resetCardsBack() {
+    int i = 0;
+    for (i = 0; i < 16; i++) {
+      click[i] = false;
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -106,10 +123,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: InkWell(
                             onTap: () {
                               setState(() {
+                                click[2] = !click[2];
                                 print(cardVisible.getPokemon(2));
+                                print(click[2]);
                               });
                             },
-                            child: card(),
+                            child: click[2]
+                                ? card(cardVisible.getPokemon(2))
+                                : card(),
                           ),
                         ),
                       if (cardVisible.getVisibility(3))
@@ -117,10 +138,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: InkWell(
                             onTap: () {
                               setState(() {
+                                click[3] = !click[3];
                                 print(cardVisible.getPokemon(3));
+                                print(click[3]);
                               });
                             },
-                            child: card(),
+                            child: click[3]
+                                ? card(cardVisible.getPokemon(3))
+                                : card(),
                           ),
                         ),
                     ],
@@ -134,10 +159,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: InkWell(
                             onTap: () {
                               setState(() {
+                                click[4] = !click[4];
                                 print(cardVisible.getPokemon(4));
+                                print(click[4]);
                               });
                             },
-                            child: card(),
+                            child: click[4]
+                                ? card(cardVisible.getPokemon(4))
+                                : card(),
                           ),
                         ),
                       if (cardVisible.getVisibility(5))
@@ -145,10 +174,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: InkWell(
                             onTap: () {
                               setState(() {
+                                click[5] = !click[5];
                                 print(cardVisible.getPokemon(5));
+                                print(click[5]);
                               });
                             },
-                            child: card(),
+                            child: click[5]
+                                ? card(cardVisible.getPokemon(5))
+                                : card(),
                           ),
                         ),
                       if (cardVisible.getVisibility(6))
@@ -156,10 +189,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: InkWell(
                             onTap: () {
                               setState(() {
+                                click[6] = !click[6];
                                 print(cardVisible.getPokemon(6));
+                                print(click[6]);
                               });
                             },
-                            child: card(),
+                            child: click[6]
+                                ? card(cardVisible.getPokemon(6))
+                                : card(),
                           ),
                         ),
                       if (cardVisible.getVisibility(7))
@@ -167,10 +204,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: InkWell(
                             onTap: () {
                               setState(() {
+                                click[7] = !click[7];
                                 print(cardVisible.getPokemon(7));
+                                print(click[7]);
                               });
                             },
-                            child: card(),
+                            child: click[7]
+                                ? card(cardVisible.getPokemon(7))
+                                : card(),
                           ),
                         ),
                     ],
@@ -184,10 +225,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: InkWell(
                             onTap: () {
                               setState(() {
+                                click[8] = !click[8];
                                 print(cardVisible.getPokemon(8));
+                                print(click[8]);
                               });
                             },
-                            child: card(),
+                            child: click[8]
+                                ? card(cardVisible.getPokemon(8))
+                                : card(),
                           ),
                         ),
                       if (cardVisible.getVisibility(9))
@@ -195,10 +240,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: InkWell(
                             onTap: () {
                               setState(() {
+                                click[9] = !click[9];
                                 print(cardVisible.getPokemon(9));
+                                print(click[9]);
                               });
                             },
-                            child: card(),
+                            child: click[9]
+                                ? card(cardVisible.getPokemon(9))
+                                : card(),
                           ),
                         ),
                       if (cardVisible.getVisibility(10))
@@ -206,10 +255,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: InkWell(
                             onTap: () {
                               setState(() {
+                                click[10] = !click[10];
                                 print(cardVisible.getPokemon(10));
+                                print(click[10]);
                               });
                             },
-                            child: card(),
+                            child: click[10]
+                                ? card(cardVisible.getPokemon(10))
+                                : card(),
                           ),
                         ),
                       if (cardVisible.getVisibility(11))
@@ -217,10 +270,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: InkWell(
                             onTap: () {
                               setState(() {
+                                click[11] = !click[11];
                                 print(cardVisible.getPokemon(11));
+                                print(click[11]);
                               });
                             },
-                            child: card(),
+                            child: click[11]
+                                ? card(cardVisible.getPokemon(11))
+                                : card(),
                           ),
                         ),
                     ],
@@ -234,10 +291,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: InkWell(
                             onTap: () {
                               setState(() {
+                                click[12] = !click[12];
                                 print(cardVisible.getPokemon(12));
+                                print(click[12]);
                               });
                             },
-                            child: card(),
+                            child: click[12]
+                                ? card(cardVisible.getPokemon(12))
+                                : card(),
                           ),
                         ),
                       if (cardVisible.getVisibility(13))
@@ -245,10 +306,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: InkWell(
                             onTap: () {
                               setState(() {
+                                click[13] = !click[13];
                                 print(cardVisible.getPokemon(13));
+                                print(click[13]);
                               });
                             },
-                            child: card(),
+                            child: click[13]
+                                ? card(cardVisible.getPokemon(13))
+                                : card(),
                           ),
                         ),
                       if (cardVisible.getVisibility(14))
@@ -256,10 +321,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: InkWell(
                             onTap: () {
                               setState(() {
+                                click[14] = !click[14];
                                 print(cardVisible.getPokemon(14));
+                                print(click[14]);
                               });
                             },
-                            child: card(),
+                            child: click[14]
+                                ? card(cardVisible.getPokemon(14))
+                                : card(),
                           ),
                         ),
                       if (cardVisible.getVisibility(15))
@@ -267,10 +336,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: InkWell(
                             onTap: () {
                               setState(() {
+                                click[15] = !click[15];
                                 print(cardVisible.getPokemon(15));
+                                print(click[15]);
                               });
                             },
-                            child: card(),
+                            child: click[15]
+                                ? card(cardVisible.getPokemon(15))
+                                : card(),
                           ),
                         ),
                     ],
@@ -283,6 +356,7 @@ class _MyHomePageState extends State<MyHomePage> {
             onTap: () {
               setState(() {
                 cardVisible.embaralha();
+                resetCardsBack();
                 print(cardVisible.pokemonList[0]);
               });
             },
