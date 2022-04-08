@@ -1,16 +1,7 @@
-# memory
+# Pokémon Memory Game
 
-A new Flutter project.
+## Aplicação Flutter de jogo da memória
 
-## Getting Started
+Essa aplicação é um jogo da memória ilustrado com cartas do Pokémon.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://user-images.githubusercontent.com/100291684/162500440-0b013931-dc8e-478d-92ba-cfe37e71dc0f.jpeg" width="300" height="600" /> <img src="https://user-images.githubusercontent.com/100291684/162500447-509df013-fc85-46b3-a9de-8115cf269f1b.jpeg" width="300" height="600" /> 
